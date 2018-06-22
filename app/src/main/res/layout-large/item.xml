@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="7dp" >
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+
+            android:layout_marginEnd="15dp"
+
+            app:cardBackgroundColor="@color/main_background"
+            app:cardElevation="7dp" >
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+
+                android:layout_gravity="center"
+                android:padding="4dp"
+
+                android:src="@drawable/deezer" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="23sp"
+            android:textColor="@android:color/black"
+
+            android:layout_toEndOf="@+id/card_view"
+            android:layout_toStartOf="@+id/start_button"
+
+            tools:text="KIDS SEE GHOSTS"/>
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@android:color/black"
+            android:textSize="21dp"
+
+            android:layout_toEndOf="@+id/card_view"
+            android:layout_below="@id/title_view"
+
+            tools:text="02:45" />
+
+        <ImageView
+            android:id="@+id/start_button"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+            android:layout_alignParentEnd="true"
+
+            android:src="@drawable/play" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:background="@color/main_background" />
+
+
+</LinearLayout>

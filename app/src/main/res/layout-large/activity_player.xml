@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".PlayerActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:padding="5dp"
+
+        android:background="@color/main_background" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/deezer" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="45dp"
+                android:textColor="@android:color/white"
+
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+
+                android:text="@string/app_name" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="235dp"
+        android:layout_height="205dp"
+
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+
+        app:cardElevation="7dp"
+        app:cardBackgroundColor="@color/main_background"
+        app:contentPadding="5dp"
+        app:cardCornerRadius="4dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/spotify"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/track_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+
+        android:layout_marginTop="15dp"
+
+        tools:text="KIDS SEE GHOSTS"/>
+
+    <ImageView
+        android:id="@+id/control_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:src="@drawable/play" />
+
+    <SeekBar
+        android:id="@+id/track_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/current_time_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:textSize="19sp"
+            android:textColor="@android:color/black"
+            android:text="@string/start_of_song"/>
+
+        <TextView
+            android:id="@+id/max_time_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="6"
+
+            android:textSize="19sp"
+            android:textColor="@android:color/black"
+
+            tools:text="02:47" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/volume_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="7"
+
+            android:src="@drawable/volume" />
+
+        <SeekBar
+            android:id="@+id/volume_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
